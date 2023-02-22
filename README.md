@@ -5,6 +5,10 @@ Logo image location will need to be specified in the GUI.py code, besides that e
 
 # TODO:
 
-Make it so the logo isn't addressed via the shitty direct-path method being used
+Make it so the logo isn't addressed via the shitty direct-path method being used (done)
 
-Add credits
+Add credits (done)
+
+Put credits in own dedicated menu
+
+Add more utilities
