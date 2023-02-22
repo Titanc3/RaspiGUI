@@ -89,7 +89,7 @@ def base():
             media.configure(text = "SPI", state = DISABLED, disabledforeground = "white", background = "grey")
         else:
             GPIO.setup(int(port), GPIO.OUT)
-            media.configure(text = f"GPIO {gpio_trans[int(port)]}",state = NORMAL, foreground = "green")
+            media.configure(text = "GPIO {gpio_trans[int(port)]}",state = NORMAL, foreground = "green")
             if GPIO.input((int(port))) == 0:
                 media.configure(background = "dark grey", command = lambda: on(port))
             else:
@@ -179,6 +179,6 @@ except KeyboardInterrupt:
 
 except:
     print("Eror, Review Code")
-finally:
-    GPIO.cleanup()
+#finally: Messed up on my system, it might've been that I ran it wrong (out of an IDE, until I did,) but the OS's kernel will most likely clean up this sort of thing once the program is killed, so this isn't required.
+#    GPIO.cleanup()
 
