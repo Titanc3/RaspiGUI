@@ -6,6 +6,8 @@ import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BOARD)
 
+version = "v1.0.1" # IMPORTANT: UPDATE EVERY RELEASE
+
 packed = True
 first = True
 root = Tk()
@@ -18,7 +20,7 @@ main.pack(side = TOP, pady = 10)
 title = Label(frame, text = "RaspiPanel", font =(
   "URW Gothic", 45))
 title.pack(side = TOP)
-credits = Label(frame, text = "By Titanc3 and Killaship", font =("Quicksand", 20))
+credits = Label(frame, text = version + "by Titanc3 and Killaship", font =("Quicksand", 20))
 credits.pack(side = TOP)
 times = Label(frame, text = str(t.asctime(t.localtime())), font =("Quicksand", 10))
 times.pack(side = TOP)
