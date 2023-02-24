@@ -13,7 +13,7 @@ version = "1.10"
 root.title(" ")
 frame = Frame(root)
 frame.pack()
-icon = PhotoImage(file = r"/home/titance/Downloads/logo.png") #IMPORTANT, CHANGE THIS TO IMAGE LOCATION
+icon = PhotoImage(file = r"./logo.png") #IMPORTANT, CHANGE THIS TO IMAGE LOCATION
 main = Label(frame, image = icon, height = "200")
 title = Label(frame, text = "RaspiPanel", font =(
   "URW Gothic", 45))
